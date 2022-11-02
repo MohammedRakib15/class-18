@@ -1,0 +1,388 @@
+/*common css start*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.continer {
+    width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.section_info {
+    text-align: center;
+}
+
+.section_info h2 {
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+
+.section_info p {
+    color: #7e8287;
+    padding: 31px;
+}
+
+.section_info p b {
+    font-size: 23px;
+}
+
+/*common css end*/
+/* Preloader start */
+#preloader{
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9dbdb;
+}
+/* Preloader end */
+
+/* nav section css start */
+#nav {
+    background-color: #02918b;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#nav.active {
+    position: fixed;
+    animation: menu_fixed 1s;
+}
+
+@keyframes menu_fixed {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+#nav .row {
+    align-items: center;
+}
+
+#nav .logo {
+    width: 20%;
+}
+
+#nav .menu {
+    width: 80%;
+}
+
+#nav .menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav .menu ul li a {
+    display: inline-block;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 26px 25px;
+    text-transform: uppercase;
+    transition: .6s;
+}
+
+nav .menu ul li a:hover {
+    color: #cfc91d;
+    background-color: black;
+}
+
+/* nav section css end */
+
+
+/* banner section start*/
+#banner {
+    background-image: url(../img/babor.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+#banner .banner_continer h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#banner .banner_continer h1 {
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+#banner .banner_continer p {
+    font-size: 18px;
+}
+
+#banner .banner_continer img {
+    display: block;
+    margin: 50px auto;
+}
+
+#banner .banner_continer a {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: #cfc91d;
+    padding: 17px 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#banner a:hover {
+    color: red;
+    background-color: aqua;
+}
+
+#banner .continer {
+    height: 100%;
+}
+
+#banner .row {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+}
+
+/* banner section end */
+
+/* about section start */
+#about {
+    padding: 100px 0;
+}
+
+#about .section_info p {
+    width: 875px;
+    margin: auto;
+}
+
+#about .section_info {
+    margin-bottom: 88px;
+}
+
+#about .about_item {
+    text-align: center;
+    padding: 35px 60px;
+    border-right: 1px solid #d9dbdb;
+}
+
+#about .about_item:last-child {
+    border-right: none;
+}
+
+#about .about_item i {
+    color: #0b9590;
+    font-size: 25px;
+}
+
+#about .about_item h4 {
+    font-size: 16px;
+    color: #7e8287;
+    font-weight: 800;
+    padding: 29px 0;
+}
+
+#about .about_item p {
+    font-size: 11px;
+    color: #8c8f94;
+}
+
+/* about section end */
+
+
+/*service section start*/
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+#service {
+    background-image: url(../img/servig_bg.jpg);
+    background-size: cover;
+}
+
+#service .inner_continer {
+    width: 50%;
+}
+
+#service .section_info {
+    text-align: left;
+}
+
+#service .section_info p {
+    padding: 31px 0;
+}
+
+#service .service_item {
+    width: 50%;
+    padding: 25px 110px 25px 0;
+}
+
+
+/* service section end*/
+
+/* //Service Section Css End */
+/* My Work Section Css Start */
+#my_work .section_info {
+    padding: 100px 0;
+}
+
+#my_work .section_info p {
+    width: 675px;
+    margin: auto;
+}
+
+#my_work .work_item {
+    width: 25%;
+    position: relative;
+}
+
+#my_work .work_item img {
+    width: 100%;
+    display: block;
+}
+
+#my_work .work_item .overlay {
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    top: 20px;
+    bottom: 20px;
+    background: rgba(2, 145, 139, 0.85);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+#my_work .work_item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* //My Work Section Css End */
+
+
+/* Contact Section Css Start */
+#contact .section_info {
+    padding: 100px 0;
+}
+
+#contact .section_info p {
+    width: 675px;
+    margin: auto;
+}
+
+#contact .contact_form {
+    background-color: #0a0a0b;
+    padding: 70px 0;
+}
+
+#contact .contact_form input,
+#contact .contact_form textarea {
+    color: #7e8287;
+    display: block;
+    margin: auto;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#contact .contact_form .input_small {
+    width: 640px;
+}
+
+#contact .contact_form .input_large {
+    width: 916px;
+}
+
+#contact .contact_form textarea {
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contact .contact_form button {
+    border: none;
+    font-size: 14px;
+    color: #0b1016;
+    font-weight: 800;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    transition: .5s;
+    background-color: #cfc91d;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* //Contact Section Css End */
+
+/* Footer Css Start */
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #7e8287;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+/* //Footer Css End */
+
+
+
+/*  Section Css Start */
+
+/* // Section Css End */
